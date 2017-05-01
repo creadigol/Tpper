@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.creadigol.cashtag.Overscroll"
+    tools:context=".ServerDeatailsActivity"
+    tools:showIn="@layout/serverdetails_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cvRating"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llRatingBarDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/serverDetailsRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="3"
+                            android:text="0.0"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <creadigol.com.tipper.RatingView
+                            android:id="@+id/serverDetRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:drawable_empty="@drawable/rating_icon_black"
+                            app:drawable_filled="@drawable/rating_icon_gold"
+                            app:drawable_half="@drawable/rating_icon_half"
+                            app:drawable_margin="4dp"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            app:drawable_size="27dp"
+                            app:is_indicator="false"
+                            app:max_count="4"
+                            app:rating="0" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/user" />
+
+                            <TextView
+                                android:id="@+id/serverDetTotalRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Total"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llValuesBardetials"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <include layout="@layout/valuebarserver_activity" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/serverReviewList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/loadMore"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNodataFound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light"
+                android:paddingTop="100dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/reviews"/>
+            <TextView
+                android:id="@+id/noReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="Sorry \n Review list not available!"
+                android:textSize="18sp"/>
+                </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

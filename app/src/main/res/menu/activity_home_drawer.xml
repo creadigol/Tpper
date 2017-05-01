@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_MyReview"
+            android:icon="@drawable/review"
+            android:title="My Reviews" />
+        <group
+            android:id="@+id/menu_bottom"
+            android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/aboutus"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_Rateus"
+                android:icon="@drawable/rate"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/nav_Faq"
+                android:icon="@drawable/faqs"
+                android:title="FAQs" />
+        </group>
+        <group
+            android:id="@+id/group2"
+            android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_privacypolicy"
+                android:icon="@drawable/policy"
+                android:title="Privacy &amp; Policy" />
+        </group>
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>
