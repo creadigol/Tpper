@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Tpper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">1882806712004319</string>
+    <string name="fb_login_protocol_scheme">fb1882806712004319</string>
+
+    <string name="GOOGLE_DRIVE_KEY">AIzaSyCVKmLtdXZ2BoRKG2ofUSS0zXvimYEbOTM</string>
+
+    <string name="CONSUMER_KEY">2uFuIbzRRHRo1r95QhapNzAe6</string>
+    <string name="CONSUMER_SECRET">702Mw2rB43ertFbEdvOjNB14eFRQt10MJgI8CXLMZ2YUS3ewNd</string>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://www.creadigol.biz/</string>
+    <string name="twitter_consumer_key">0PJvo1mRPkb8rexTkfKXpSkDx</string>
+    <string name="twitter_consumer_secret">	20rYmE2ZHOgiYPCrczJJlNUVr0VNlZF9mD2enQG3ZWOhtobzo5</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
+    <string name="album_name">CameraSample</string>
+    <string name="about_us">Tpper is a social platform used to transfer cashless payments to those who are in the experience and service industry. We are a full-service solution for the merchant, server and customer. We take away the burden of payroll from the merchant, and improve the ease of tip transferring for the server and we help you make your payment with simplicity and ease through our new age technology.  No need to wait anymore after your meal or drink, simply log in, pay, tip and go!</string>
+
+    <string name="save">Save</string>
+    <string name="Yes">Yes</string>
+    <string name="no">No</string>
+    <string name="discard">Discard</string>
+    <string name="ok">ok</string>
+
+</resources>

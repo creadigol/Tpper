@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    tools:showIn="@layout/profile_content_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/golgenicon"/>
+        <com.philjay.valuebar.ValueBar
+            android:id="@+id/valueBar4"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/golgenicon"/>
+        <com.philjay.valuebar.ValueBar
+            android:id="@+id/valueBar3"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/golgenicon"/>
+        <com.philjay.valuebar.ValueBar
+            android:id="@+id/valueBar2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/golgenicon"/>
+        <com.philjay.valuebar.ValueBar
+            android:id="@+id/valueBar1"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

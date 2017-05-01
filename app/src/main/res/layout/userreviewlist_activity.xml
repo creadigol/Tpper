@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/userReviewToolbar"
+        layout="@layout/toolbar_review"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvUserReviewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noReviewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No review available"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>
